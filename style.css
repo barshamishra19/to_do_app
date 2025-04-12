@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: #ffeef8;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff0fa;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #d36c9b;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  background: #f8b9d4;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs button:hover {
+  background: #f493b3;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffcde3;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li {
+  background: #fff5fb;
+  margin: 0.5rem 0;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.performance {
+  background: #ffe0f0;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}

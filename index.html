@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cute Planner</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 My Cute Planner 🌸</h1>
+
+    <div class="tabs">
+      <button onclick="changeView('daily')">Daily</button>
+      <button onclick="changeView('weekly')">Weekly</button>
+      <button onclick="changeView('monthly')">Monthly</button>
+      <button onclick="changeView('yearly')">Yearly</button>
+    </div>
+
+    <div id="planner">
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter task..." required />
+        <input type="number" id="task-time" placeholder="Time (mins)" min="1" required />
+        <button type="submit">Add Task ✨</button>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
+
+    <div class="performance">
+      <h3>📊 Your Performance</h3>
+      <p id="performance-stats">No data yet</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
